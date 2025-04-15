@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Schoolbell&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imghead{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEE7D6;
+    width: 700px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+}
+
+
+
+.imghead div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-family: Schoolbell;
+}
+
+p{
+    font-size: 12px;
+}
+
+.container{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+h6{
+    font-size: 13px;
+}
+
+.form2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.form2 div{
+    width: 233px;
+}
+
+.certidao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(202, 202, 202);
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(175, 175, 175);
+}
+
+.checkbox{
+    display: flex;
+    gap: 10px;
+}
+
+.form3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+.form3 input{
+    width: 330px;
+}
+.form3 select{
+    width: 330px;
+}
+
+.form4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form5 input{
+    width: 330px;
+}
+.form5 select{
+    width: 330px;
+}
+
+textarea{
+    border-radius: 10px;
+    opacity: 0.5;
+    color: black;
+}
+
+
+.form6{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form6 input{
+    width: 320px;
+}
+
+/* Esconde o checkbox padrão */
+.custom-checkbox {
+    display: none;
+  }
+  
+  /* Estilo da "caixa" personalizada, com borda arredondada */
+  .custom-checkbox-label {
+    width: 100px;  /* Tamanho do checkbox */
+    height: 100px;  /* Tamanho do checkbox */
+    border: 2px solid #ccc;  /* Borda do checkbox */
+    border-radius: 10px;  /* Borda arredondada */
+    position: relative;  /* Necessário para a bolinha */
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;  /* Impede a imagem de ultrapassar a borda */
+  }
+  
+  /* Estilo da imagem dentro do checkbox */
+  .checkbox-image {
+    width: 48px;  /* Faz a imagem ocupar toda a largura do container */
+    height: 48px;  /* Faz a imagem ocupar toda a altura do container */
+    object-fit: contain;  /* A imagem será redimensionada para caber dentro do checkbox sem distorção */
+    display: block;  /* Remove qualquer espaço extra abaixo da imagem */
+    position: absolute;
+    top: 50%;  /* Centraliza a imagem verticalmente */
+    left: 50%;  /* Centraliza a imagem horizontalmente */
+    transform: translate(-50%, -50%);  /* Centraliza perfeitamente a imagem */
+  }
+  
+  /* Estilos para a bolinha dentro do checkbox */
+  .custom-checkbox-label::before {
+    content: '';
+    position: absolute;
+    top: 4px;  /* Posiciona a bolinha no canto superior esquerdo */
+    left: 4px;  /* Posiciona a bolinha no canto superior esquerdo */
+    width: 12px;  /* Tamanho da bolinha */
+    height: 12px;  /* Tamanho da bolinha */
+    background-color: white;  /* Cor da bolinha */
+    border-radius: 10px;  /* Deixa a bolinha redonda */
+    border: 2px solid #ccc;  /* Borda da bolinha */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  /* Quando o checkbox está marcado */
+  .custom-checkbox:checked + .custom-checkbox-label::before {
+    background-color: #F3541C;  /* Cor da bolinha quando marcada */
+    border: 2px solid #F3541C;
+
+  }
+  
+  /* Quando o checkbox é marcado, muda o fundo */
+  .custom-checkbox:checked + .custom-checkbox-label {
+    background-color: rgba(255, 255, 255, 0.1);  /* Cor do fundo quando marcado */
+    border: 2px solid #F3541C;
+  }
+  
+.custom-checkbox-container h6{
+    margin-top: -30px;
+    text-align: center;
+    color: #757575;
+}
+
+.turno{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h5{
+    font-size: 16px;
+}
+
+.esporte{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+#termos{
+    cursor: pointer;
+    width: 10px;
+    height: 26px;
+    border-radius: 50%;
+}
+#termos:checked{
+    background-color: #f3551cd3;
+}
+
+input[type="checkbox"]:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+
+.termos{
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-top: 1px solid black;
+
+}
+
+.termos span{
+    color: #F3541C;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+#btn2{
+    background-color: #E43A12;
+    width: 200px;
+}
+#btn1{
+    color: #E43A12;
+    border: 1px solid #E43A12;
+    width: 200px;
+}
