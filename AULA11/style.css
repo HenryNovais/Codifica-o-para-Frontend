@@ -1,0 +1,303 @@
+#inicio{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/AULA11/Brand.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(20px);
+}
+
+#inicio img{
+    height: 900px;
+    width: 495px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px  black;
+}
+
+#inicio div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio a{
+    text-decoration: none;
+    color: white;
+}
+
+#btn2{
+    width: 300px;
+    margin-top: -110px;
+}
+
+#btn2:hover{
+    transform: scale(1.06);
+    transition: 0.3s;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 700px;
+    color: white;
+
+}
+
+.form-control{
+    background-color: #1C1F21;
+}
+
+.form-control::placeholder{
+    color: #869198;
+
+}
+
+.form-control:focus{
+    background-color: #1C1F21;
+
+}
+
+input[type="datetime-local"]{
+    color: #869198;
+}
+input[type="datetime-local"]:focus{
+    color: #869198;
+}
+.form3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form3 div{
+    width: 330px;
+}
+
+.cores{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.cor1 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #59B2FF; /* Fundo padrão */
+}
+
+.cor1:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor2 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #6A59FF; /* Fundo padrão */
+}
+
+.cor2:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor3 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #B259FF; /* Fundo padrão */
+}
+
+.cor3:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor4 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FF59F9; /* Fundo padrão */
+}
+
+.cor4:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor5 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FF598B; /* Fundo padrão */
+}
+
+.cor5:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor6 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FF5959; /* Fundo padrão */
+}
+
+.cor6:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor7 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FF8B59; /* Fundo padrão */
+}
+
+.cor7:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor8 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FFCD59; /* Fundo padrão */
+}
+
+.cor8:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor9 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #E1FF59; /* Fundo padrão */
+}
+
+.cor9:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+.cor10 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px gray solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #59FF91; /* Fundo padrão */
+}
+
+.cor10:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+
+.cor11 {
+    appearance: none; /* Remove o estilo padrão */
+    width: 30px;
+    height: 30px;
+    border: 3px rgba(212, 212, 212, 0.027) solid; /* Borda inicial transparente */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #59FFF9; /* Fundo padrão */
+}
+
+.cor11:checked {
+    border-color: black; /* Muda a cor da borda ao marcar */
+}
+
+
+.tit{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    width: 134px;
+    height: 103px;
+    margin: 10px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.checkbox-container input {
+    display: none; /* Esconde o checkbox padrão */
+}
+
+.checkbox-container img {
+    width: 126px;
+    height: 64px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.checkbox-container input:checked + img {
+    border-color: #6151ee; /* Altera a borda quando marcado */
+}
+
+.checkbox-container span {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tema{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#termos{
+    
+    border-top: 1px gray solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
