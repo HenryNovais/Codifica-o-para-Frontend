@@ -1,0 +1,37 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #303030;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 32px;
+}
+
+h1,
+h2{
+    color: #fff;
+    margin: 32px 0;
+}
+
+form{
+    min-width: 510px;
+    display: flex;
+    gap: 12px;
+}
+
+li{
+  color: aliceblue;  
+}
+
+.input-error,
+.input-error:focus{
+    border-color: red;
+}
+
+button{
+    background-color: blueviolet;
+}
