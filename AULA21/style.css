@@ -1,0 +1,149 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgb(58, 58, 238), rgb(108, 108, 238), rgb(255, 255, 255));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 560px;
+  height: 530px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.active { 
+    display: block; 
+}
+
+.dog-img { 
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.dog-card { 
+    text-align: center; 
+}
+
+.buttons {
+    display: flex; 
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+.fav-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.fav-grid img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#breedSelect{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding-top: 60px;
+}
+
+.slide-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.slide-container img:hover{
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container button{
+    border: none;
+    background-color: transparent;
+    
+}
+
+#vot{
+    color: blue;
+}
+#lupa{
+    color: green;
+}
+#heart{
+    color: red;
+}
+#fav{
+    color: red;
+}
+#like:hover{
+    color: blue;
+    transition: 0.3s;
+}
+#deslike:hover{
+    color: rgb(121, 0, 0);
+    transition: 0.3s;
+}

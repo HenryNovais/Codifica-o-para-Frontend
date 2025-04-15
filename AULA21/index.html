@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/AULA21/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <button onclick="showPage('voting')"><i class="fa-solid fa-arrow-down-up-across-line" id="vot"></i>Voting</button>
+      <button onclick="showPage('breeds')"><i class="fa-solid fa-magnifying-glass" id="lupa"></i> Breeds</button>
+      <button onclick="showPage('favs')"><i class="fa-regular fa-heart" id="heart"></i> Favs</button>
+    </nav>
+
+    <div id="voting" class="page active">
+      <div class="dog-card">
+        <img id="dogImage" class="dog-img" src="" alt="Dog" />
+        <div class="buttons">
+          <button onclick="vote(-1)"><i class="fa-regular fa-thumbs-down" id="deslike"></i></button>
+          <button onclick="favorite()"><i class="fa-regular fa-heart" id="fav"></i></button>
+          <button onclick="vote(1)"><i class="fa-regular fa-thumbs-up" id="like"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="breeds" class="page">
+      <select id="breedSelect" onchange="searchBreedBySelect()">
+        <option value="">Select a breed...</option>
+      </select>
+      <div id="breedResult" class="slide-container"></div>
+    </div>
+
+    <div id="favs" class="page">
+      <div class="fav-grid" id="favGrid"></div>
+    </div>
+  </div>
+  <script src="/AULA21/script.js"></script>
+</body>
+</html>
