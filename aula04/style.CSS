@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Alice;
+    color: #A54328;
+}
+
+body{
+    background-color: rgb(252, 245, 232);
+    background-image: url(/aula04/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 24px;
+}
+
+p{
+    font-size: 24px;
+}
+
+#dir{
+    width: 520px;
+    height: 642.7px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+#es{
+    width: 525px;
+    height: 607px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#es div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#es input{
+    width: 133px;
+    height: 45px;
+    background-color: #A54328;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#es li{
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        gap: 5%;
+        background-color: rgb(252, 245, 232);
+
+    }
+
+    #dir, #es {
+        width: 80%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2, p {
+        font-size: 18px;
+    }
+
+    #es input {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        gap: 3%;
+        background-color: rgb(252, 245, 232);
+    }
+
+    #dir, #es {
+        width: 90%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2, p {
+        font-size: 16px;
+    }
+
+    #es input {
+        width: 100%;
+        height: 45px;
+    }
+
+    #es li {
+        font-size: 18px;
+    }
+}
